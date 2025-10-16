@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.parcial2.DashboardController">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+        <HBox layoutX="55.0" layoutY="155.0" prefWidth="229.0" spacing="10" />
+        <HBox layoutX="55.0" layoutY="65.0" prefWidth="229.0" spacing="10" />
+        <HBox layoutX="55.0" layoutY="95.0" prefWidth="229.0" spacing="10" />
+        <HBox layoutX="260.0" layoutY="98.0" prefWidth="229.0" spacing="10" />
+        <HBox layoutX="55.0" layoutY="125.0" prefWidth="229.0" spacing="10" />
+        <Button fx:id="guardar" layoutX="35.0" layoutY="400.0" mnemonicParsing="false" onAction="#guardarDatosClick" prefHeight="136" text="Guardar Datos" />
+        <TableView fx:id="tablaDatos" layoutX="28.0" layoutY="186.0" prefHeight="200" prefWidth="523">
+            <Label text="Tabla de productos" />
+            <columns>
+                <TableColumn fx:id="cType" prefWidth="75.0" text="Tipo" />
+                <TableColumn fx:id="cCities" prefWidth="75.0" text="Ciudad" />
+                <TableColumn fx:id="cRooms" prefWidth="75.0" text="Numero de Habitaciones" />
+                <TableColumn fx:id="cFloors" prefWidth="75.0" text="Numero de Pisos" />
+                <TableColumn fx:id="cPrice" prefWidth="75.0" text="Price" />
+                <TableColumn fx:id="cEliminate" prefWidth="75.0" text="eliminar" />
+            </columns>
+        </TableView>
+         <TextField fx:id="txtNumeroP" layoutX="387.0" layoutY="25.0" />
+         <Label layoutX="-3.0" layoutY="75.0" text="Numero de Pisos" />
+         <TextField fx:id="txtNumeroH" layoutX="387.0" layoutY="71.0" />
+          <Label layoutX="42.0" layoutY="29.0" text="Tipo" />
+          <TextField fx:id="txtTipo" layoutX="81.0" layoutY="25.0" />
+         <Label layoutX="255.0" layoutY="75.0" text="Numero de Habitaciones" />
+          <TextField fx:id="txtPrecio" layoutX="81.0" layoutY="71.0" />
+          <Label layoutX="305.0" layoutY="29.0" text="Precio" />
+          <Label layoutX="35.0" layoutY="119.0" text="Ciudad" />
+          <TextField fx:id="txtCiudad" layoutX="81.0" layoutY="115.0" />
+    </AnchorPane>
+</VBox>
